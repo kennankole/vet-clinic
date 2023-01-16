@@ -63,11 +63,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet clinic] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[vet clinic]** is a vetenary database with data about different animals
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -102,9 +102,8 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Add new animals to the database]**
+- **[Perfom different queries]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,63 +129,51 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
 
-```sh
- gem install rails
+
 ```
- -->
+ npm install rails
+```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
   cd my-project
-  gem install
+  npm install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+  npm start
 ```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
 ```
---->
+  npm test
+```
+
 
 ### Deployment
 
@@ -210,15 +197,9 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@kennankole](https://github.com/kennankole)
+- Twitter: [@KennedyObwombe](https://twitter.com/KennedyObwombe)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kennedyomondi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +209,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Update the animals records]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,7 +230,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project kindly give it a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
