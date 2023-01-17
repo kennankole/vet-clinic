@@ -12,3 +12,26 @@ CREATE TABLE animals(
 
 ALTER TABLE animals 
 ADD COLUMN species VARCHAR(150);
+
+
+CREATE TABLE owners(
+    id SERIAL PRIMARY KEY,
+    full_name VARCHAR(256) NOT NULL,
+    age INT NOT NULL
+);
+
+CREATE TABLE species(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) 
+);
+
+
+BEGIN;
+ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
+ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
+
+
+
+
