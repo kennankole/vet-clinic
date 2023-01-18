@@ -75,19 +75,6 @@ After you're finished please remove all the comments and instructions!
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
@@ -103,17 +90,11 @@ After you're finished please remove all the comments and instructions!
 > Describe between 1-3 key features of the application.
 
 - **[Add new animals to the database]**
-- **[Perfom different queries]**
+- **[Perfom different multiple queries]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,10 +110,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
-
 ```
- npm install rails
+ npm install postgres
 ```
 
 ### Setup
@@ -140,52 +119,10 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 
-```sh
+```
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
-
-
-### Install
-
-Install this project with:
-
-```sh
-  cd my-project
-  npm install
-```
-
-### Usage
-
-To run the project, execute the following command:
-
-
-```sh
-  npm start
-```
-
-
-### Run tests
-
-To run tests, run the following command:
-
-
-```
-  npm test
-```
-
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +177,7 @@ If you like this project kindly give it a ⭐️
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank microverse tutorials
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,13 +187,9 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Do I need PgdAdmin]**
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+  - [Not necessarily but its a good option, all you need is Postgresql installed]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
