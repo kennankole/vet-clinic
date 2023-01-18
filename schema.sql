@@ -35,13 +35,11 @@ ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
 
 
 CREATE TABLE vets (
-    id INT GENERATED ALWAYS AS IDENTITY,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(250),
     age INT,
     date_of_graduation DATE
 );
-
-ALTER TABLE vets ADD UNIQUE (id);
 
 CREATE TABLE specializations (
     id INT GENERATED ALWAYS AS IDENTITY,
