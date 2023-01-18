@@ -34,4 +34,26 @@ ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
 
 
 
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(250),
+    age INT,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    species_id INTEGER REFERENCES species(id),
+    vet_id INTEGER REFERENCES vets(id),
+    UNIQUE(species_id, vet_id)
+);
+
+ALTER TABLE animals ADD UNIQUE (id);
+    CREATE TABLE visits (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    animals_id INTEGER REFERENCES animals(id),
+    vet_id INTEGER REFERENCES vets(id),
+    visit_date DATE,
+    UNIQUE(animals_id, vet_id)
+);
 
