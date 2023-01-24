@@ -48,6 +48,14 @@ ALTER TABLE invoice_items
 ADD CONSTRAINT fk_treatment_id
 FOREIGN KEY (treatment_id) REFERENCES treatments(id);
 
+ALTER TABLE invoices
+ADD CONSTRAINT fk_medical_history_id
+FOREIGN KEY (medical_history__id) REFERENCES medical_histories(id);
+
+/* many-many relation */
+CREATE TABLE medical_histories_treatments (medical_history_id INT REFERENCES medical_histories(id),
+                                           treatments_id INT REFERENCES treatments(id), 
+                                           CONSTRAINT medical_treatments PRIMARY KEY (medical_history_id, treatments_id));
 
 
 
