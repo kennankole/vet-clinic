@@ -158,3 +158,18 @@ WHERE ve.name = 'Maisy Smith'
 GROUP BY s.name
 ORDER BY count_of_species DESC
 LIMIT 1;
+
+
+SELECT COUNT(*) FROM visits WHERE animals_id = 4;
+CREATE INDEX ON visits (animals_id);
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animals_id = 4;
+
+
+explain analyze select * from visits where vet_id = 2;
+
+create index idx_vet on visits (vet_id desc);
+explain analyze select visit_date from visits where vet_id = 2;
+
+EXPLAIN ANALYZE SELECT *  FROM owners WHERE email = 'owner_18327@mail.com';
+CREATE INDEX email_asc on owners(email_asc);
+EXPLAIN ANALYZE SELECT full_name FROM owners WHERE email = 'owner_18327@mail.com';
