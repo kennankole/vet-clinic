@@ -59,4 +59,11 @@ CREATE TABLE medical_histories_treatments (medical_history_id INT REFERENCES med
 
 
 
-
+/* Indexes on Foreign Keys */
+CREATE INDEX idx_medical_history ON medical_histories(patient_id DESC);
+CREATE INDEX idx_treatment_id ON invoice_items(treatment_id DESC);
+CREATE INDEX idx_invoice_id ON invoice_items(invoice_id DESC);
+CREATE INDEX idx_medical_history ON invoices(medical_history__id DESC);
+CREATE INDEX idx_medical_history_id ON invoices(medical_history__id DESC);
+CREATE INDEX idx_medical_histories_treatments ON medical_histories_treatments(medical_history_id DESC);
+ 
